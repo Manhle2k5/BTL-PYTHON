@@ -1,0 +1,1008 @@
+==================================================
+Statistic: Age
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Chidozie Obi-Martin|Manchester Utd|17.44
+2nd|Mikey Moore|Tottenham|17.74
+3rd|Ethan Nwaneri|Arsenal|18.13
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Łukasz Fabiański|West Ham|40.06
+2nd|Ashley Young|Everton|39.83
+3rd|James Milner|Brighton|39.34
+==================================================
+Statistic: Matches Played
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Ayden Heaven|Manchester Utd|2
+2nd|Billy Gilmour|Brighton|2
+3rd|Neto|Bournemouth|2
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Youri Tielemans|Aston Villa|35
+2nd|Raúl Jiménez|Fulham|35
+3rd|Bernd Leno|Fulham|35
+==================================================
+Statistic: Starts
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Tyrique George|Chelsea|0
+2nd|Ben Chilwell|Crystal Palace|0
+3rd|Toby Collyer|Manchester Utd|0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Youri Tielemans|Aston Villa|35
+2nd|Virgil van Dijk|Liverpool|35
+3rd|Tyrick Mitchell|Crystal Palace|35
+==================================================
+Statistic: Minutes
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Ayden Heaven|Manchester Utd|95
+2nd|Jahmai Simpson-Pusey|Manchester City|96
+3rd|Billy Gilmour|Brighton|98
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Virgil van Dijk|Liverpool|3150
+2nd|Nathan Collins|Brentford|3150
+3rd|Dean Henderson|Crystal Palace|3150
+==================================================
+Statistic: Gls
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|İlkay Gündoğan|Manchester City|0
+2nd|Antony|Manchester Utd|0
+3rd|Antonín Kinský|Tottenham|0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Mohamed Salah|Liverpool|28
+2nd|Alexander Isak|Newcastle Utd|23
+3rd|Erling Haaland|Manchester City|21
+==================================================
+Statistic: Ast
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Aaron Cresswell|West Ham|0
+2nd|Aaron Ramsdale|Southampton|0
+3rd|Archie Gray|Tottenham|0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Mohamed Salah|Liverpool|18
+2nd|Jacob Murphy|Newcastle Utd|11
+3rd|Bukayo Saka|Arsenal|10
+==================================================
+Statistic: crdY
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Wilson Odobert|Tottenham|0
+2nd|Abdul Fatawu Issahaku|Leicester City|0
+3rd|Armel Bella Kotchap|Southampton|0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Saša Lukić|Fulham|12
+2nd|Morgan Gibbs-White|Nott'ham Forest|11
+3rd|Will Hughes|Crystal Palace|11
+==================================================
+Statistic: crdR
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Youri Tielemans|Aston Villa|0
+2nd|Yoane Wissa|Brentford|0
+3rd|Yerson Mosquera|Wolves|0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Jack Stephens|Southampton|2
+2nd|Bruno Fernandes|Manchester Utd|2
+3rd|Myles Lewis-Skelly|Arsenal|2
+==================================================
+Statistic: xG
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Aaron Ramsdale|Southampton|0.0
+2nd|Łukasz Fabiański|West Ham|0.0
+3rd|Abdukodir Khusanov|Manchester City|0.0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Mohamed Salah|Liverpool|24.0
+2nd|Erling Haaland|Manchester City|20.8
+3rd|Alexander Isak|Newcastle Utd|19.9
+==================================================
+Statistic: xAG
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Arijanet Muric|Ipswich Town|0.0
+2nd|Alex McCarthy|Southampton|0.0
+3rd|Albert Grønbaek|Southampton|0.0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Mohamed Salah|Liverpool|13.2
+2nd|Cole Palmer|Chelsea|10.0
+3rd|Son Heung-min|Tottenham|8.2
+==================================================
+Statistic: PrgC
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Aaron Ramsdale|Southampton|0
+2nd|Łukasz Fabiański|West Ham|0
+3rd|Yerson Mosquera|Wolves|0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Jeremy Doku|Manchester City|189
+2nd|Mohamed Salah|Liverpool|143
+3rd|Noni Madueke|Chelsea|142
+==================================================
+Statistic: PrgP
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Aaron Ramsdale|Southampton|0
+2nd|Łukasz Fabiański|West Ham|0
+3rd|Altay Bayındır|Manchester Utd|0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Bruno Fernandes|Manchester Utd|281
+2nd|Joško Gvardiol|Manchester City|251
+3rd|Bruno Guimarães|Newcastle Utd|247
+==================================================
+Statistic: PrgR
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Willy Boly|Nott'ham Forest|0
+2nd|Antonín Kinský|Tottenham|0
+3rd|Tyrone Mings|Aston Villa|0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Mohamed Salah|Liverpool|440
+2nd|Bryan Mbeumo|Brentford|319
+3rd|Alejandro Garnacho|Manchester Utd|281
+==================================================
+Statistic: Gls per 90
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Andy Irving|West Ham|0.0
+2nd|Wes Burns|Ipswich Town|0.0
+3rd|Wesley Fofana|Chelsea|0.0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Jáder Durán|Aston Villa|0.99
+2nd|Donyell Malen|Aston Villa|0.92
+3rd|James Mcatee|Manchester City|0.89
+==================================================
+Statistic: Ast per 90
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Willy Boly|Nott'ham Forest|0.0
+2nd|Willian|Fulham|0.0
+3rd|William Smallbone|Southampton|0.0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Tyrique George|Chelsea|0.87
+2nd|Danny Ings|West Ham|0.63
+3rd|Bukayo Saka|Arsenal|0.58
+==================================================
+Statistic: xG per 90
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Aaron Ramsdale|Southampton|0.0
+2nd|Archie Gray|Tottenham|0.0
+3rd|Arijanet Muric|Ipswich Town|0.0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|James Mcatee|Manchester City|0.83
+2nd|Erling Haaland|Manchester City|0.76
+3rd|Enes Ünal|Bournemouth|0.72
+==================================================
+Statistic: xAG per 90
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Łukasz Fabiański|West Ham|0.0
+2nd|Aaron Ramsdale|Southampton|0.0
+3rd|Woyo Coulibaly|Leicester City|0.0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Tyrique George|Chelsea|0.63
+2nd|Mykhailo Mudryk|Chelsea|0.58
+3rd|Luis Sinisterra|Bournemouth|0.54
+==================================================
+Statistic: GA90
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Yves Bissouma|Tottenham|0.0
+2nd|Virgil van Dijk|Liverpool|0.0
+3rd|Vitaliy Mykolenko|Everton|0.0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Altay Bayındır|Manchester Utd|4.0
+2nd|Danny Ward|Leicester City|4.0
+3rd|Christian Walton|Ipswich Town|2.67
+==================================================
+Statistic: Save%
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Yves Bissouma|Tottenham|0.0
+2nd|Virgil van Dijk|Liverpool|0.0
+3rd|Vitaliy Mykolenko|Everton|0.0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Neto|Bournemouth|84.6
+2nd|Mark Travers|Bournemouth|80.0
+3rd|Robert Sánchez|Chelsea|76.3
+==================================================
+Statistic: CS%
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Yves Bissouma|Tottenham|0.0
+2nd|Virgil van Dijk|Liverpool|0.0
+3rd|Vitaliy Mykolenko|Everton|0.0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Hákon Rafn Valdimarsson|Brentford|100.0
+2nd|Robin Olsen|Aston Villa|100.0
+3rd|Jason Steele|Brighton|50.0
+==================================================
+Statistic: PK Save%
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Yves Bissouma|Tottenham|0.0
+2nd|Virgil van Dijk|Liverpool|0.0
+3rd|Vitaliy Mykolenko|Everton|0.0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Jordan Pickford|Everton|100.0
+2nd|Caoimhín Kelleher|Liverpool|100.0
+3rd|Dean Henderson|Crystal Palace|50.0
+==================================================
+Statistic: SoT%
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Aaron Cresswell|West Ham|0.0
+2nd|Aaron Ramsdale|Southampton|0.0
+3rd|Łukasz Fabiański|West Ham|0.0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Archie Gray|Tottenham|100.0
+2nd|Séamus Coleman|Everton|100.0
+3rd|Ryan Fraser|Southampton|100.0
+==================================================
+Statistic: SoT per 90
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Aaron Cresswell|West Ham|0.0
+2nd|Aaron Ramsdale|Southampton|0.0
+3rd|Łukasz Fabiański|West Ham|0.0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Julio Enciso|Brighton|3.37
+2nd|Donyell Malen|Aston Villa|2.76
+3rd|Luis Sinisterra|Bournemouth|2.29
+==================================================
+Statistic: G per Sh
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Antonín Kinský|Tottenham|0.0
+2nd|André|Wolves|0.0
+3rd|André Onana|Manchester Utd|0.0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|John Stones|Manchester City|1.0
+2nd|Axel Disasi|Chelsea|0.5
+3rd|Myles Lewis-Skelly|Arsenal|0.5
+==================================================
+Statistic: Dist
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Łukasz Fabiański|West Ham|0.0
+2nd|Aaron Ramsdale|Southampton|0.0
+3rd|Alphonse Areola|West Ham|0.0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Ibrahim Sangaré|Nott'ham Forest|32.0
+2nd|Emmanuel Agbadou|Wolves|31.8
+3rd|Ryan Fraser|Southampton|31.6
+==================================================
+Statistic: Cmp
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|William Osula|Newcastle Utd|11
+2nd|Albert Grønbaek|Southampton|13
+3rd|Odsonne Édouard|Crystal Palace|17
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Virgil van Dijk|Liverpool|2543
+2nd|Joško Gvardiol|Manchester City|2321
+3rd|William Saliba|Arsenal|2320
+==================================================
+Statistic: Cmp%
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Matz Sels|Nott'ham Forest|51.1
+2nd|Altay Bayındır|Manchester Utd|55.5
+3rd|George Hirst|Ipswich Town|55.8
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|William Saliba|Arsenal|94.2
+2nd|Nathan Aké|Manchester City|93.9
+3rd|Manuel Akanji|Manchester City|93.9
+==================================================
+Statistic: TotDist
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|William Osula|Newcastle Utd|126
+2nd|Albert Grønbaek|Southampton|135
+3rd|Odsonne Édouard|Crystal Palace|230
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Virgil van Dijk|Liverpool|46352
+2nd|Levi Colwill|Chelsea|40277
+3rd|William Saliba|Arsenal|39927
+==================================================
+Statistic: ShortCmp%
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|William Osula|Newcastle Utd|61.5
+2nd|Paul Onuachu|Southampton|62.9
+3rd|George Hirst|Ipswich Town|66.7
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Łukasz Fabiański|West Ham|100.0
+2nd|Arijanet Muric|Ipswich Town|100.0
+3rd|Altay Bayındır|Manchester Utd|100.0
+==================================================
+Statistic: MedCmp%
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Beto|Everton|50.0
+2nd|Albert Grønbaek|Southampton|50.0
+3rd|William Osula|Newcastle Utd|50.0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Robin Olsen|Aston Villa|100.0
+2nd|Caoimhín Kelleher|Liverpool|100.0
+3rd|Martin Dúbravka|Newcastle Utd|100.0
+==================================================
+Statistic: LongCmp%
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Tyrique George|Chelsea|0.0
+2nd|Albert Grønbaek|Southampton|0.0
+3rd|Ben Godfrey|Ipswich Town|0.0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Tyrell Malacia|Manchester Utd|100.0
+2nd|Wataru Endo|Liverpool|100.0
+3rd|Andy Irving|West Ham|100.0
+==================================================
+Statistic: KP
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Aaron Ramsdale|Southampton|0
+2nd|Łukasz Fabiański|West Ham|0
+3rd|Woyo Coulibaly|Leicester City|0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Bruno Fernandes|Manchester Utd|84
+2nd|Mohamed Salah|Liverpool|82
+3rd|Cole Palmer|Chelsea|82
+==================================================
+Statistic: Pass into 1_3
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|William Osula|Newcastle Utd|0
+2nd|Chiedozie Ogbene|Ipswich Town|0
+3rd|Tyrique George|Chelsea|0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Virgil van Dijk|Liverpool|269
+2nd|Joško Gvardiol|Manchester City|237
+3rd|Youri Tielemans|Aston Villa|228
+==================================================
+Statistic: PPA
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Arijanet Muric|Ipswich Town|0
+2nd|Archie Gray|Tottenham|0
+3rd|Armel Bella Kotchap|Southampton|0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Mohamed Salah|Liverpool|86
+2nd|Martin Ødegaard|Arsenal|81
+3rd|Alex Iwobi|Fulham|78
+==================================================
+Statistic: CrsPA
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Woyo Coulibaly|Leicester City|0
+2nd|Aaron Ramsdale|Southampton|0
+3rd|Łukasz Fabiański|West Ham|0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Antonee Robinson|Fulham|28
+2nd|Pedro Porro|Tottenham|26
+3rd|Milos Kerkez|Bournemouth|23
+==================================================
+Statistic: SCA
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Woyo Coulibaly|Leicester City|0.0
+2nd|Willy Boly|Nott'ham Forest|0.0
+3rd|Altay Bayındır|Manchester Utd|0.0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Cole Palmer|Chelsea|190.0
+2nd|Bruno Fernandes|Manchester Utd|169.0
+3rd|Mohamed Salah|Liverpool|157.0
+==================================================
+Statistic: SCA90
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Woyo Coulibaly|Leicester City|0.0
+2nd|Willy Boly|Nott'ham Forest|0.0
+3rd|Kosta Nedeljković|Aston Villa|0.0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Philip Billing|Bournemouth|7.83
+2nd|Luis Guilherme|West Ham|6.52
+3rd|Kevin De Bruyne|Manchester City|6.08
+==================================================
+Statistic: GCA
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|William Osula|Newcastle Utd|0.0
+2nd|Aaron Cresswell|West Ham|0.0
+3rd|Altay Bayındır|Manchester Utd|0.0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Mohamed Salah|Liverpool|26.0
+2nd|Bukayo Saka|Arsenal|22.0
+3rd|Mikkel Damsgaard|Brentford|21.0
+==================================================
+Statistic: GCA90
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Aaron Cresswell|West Ham|0.0
+2nd|Aaron Ramsdale|Southampton|0.0
+3rd|Woyo Coulibaly|Leicester City|0.0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Bukayo Saka|Arsenal|1.29
+2nd|Solly March|Brighton|1.08
+3rd|Amad Diallo|Manchester Utd|0.93
+==================================================
+Statistic: Tkl
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Aaron Ramsdale|Southampton|0
+2nd|Łukasz Fabiański|West Ham|0
+3rd|Neto|Bournemouth|0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Idrissa Gana Gueye|Everton|124
+2nd|Daniel Muñoz|Crystal Palace|113
+3rd|João Gomes|Wolves|105
+==================================================
+Statistic: TklW
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Robin Olsen|Aston Villa|0
+2nd|Bart Verbruggen|Brighton|0
+3rd|Ben Godfrey|Ipswich Town|0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Daniel Muñoz|Crystal Palace|74
+2nd|Idrissa Gana Gueye|Everton|74
+3rd|Moisés Caicedo|Chelsea|64
+==================================================
+Statistic: Deff Att
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Mark Travers|Bournemouth|0
+2nd|Martin Dúbravka|Newcastle Utd|0
+3rd|Caoimhín Kelleher|Liverpool|0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Alexis Mac Allister|Liverpool|104
+2nd|Trent Alexander-Arnold|Liverpool|103
+3rd|João Gomes|Wolves|102
+==================================================
+Statistic: Lost
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Woyo Coulibaly|Leicester City|0
+2nd|Tyrone Mings|Aston Villa|0
+3rd|Bernd Leno|Fulham|0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|João Gomes|Wolves|60
+2nd|Elliot Anderson|Nott'ham Forest|57
+3rd|Trent Alexander-Arnold|Liverpool|55
+==================================================
+Statistic: Blocks
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Aaron Ramsdale|Southampton|0
+2nd|Łukasz Fabiański|West Ham|0
+3rd|Tyrique George|Chelsea|0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Nathan Collins|Brentford|71
+2nd|Murillo|Nott'ham Forest|67
+3rd|Tyrick Mitchell|Crystal Palace|62
+==================================================
+Statistic: Sh
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Łukasz Fabiański|West Ham|0
+2nd|Aaron Ramsdale|Southampton|0
+3rd|İlkay Gündoğan|Manchester City|0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Nathan Collins|Brentford|51
+2nd|Dara O'Shea|Ipswich Town|47
+3rd|Murillo|Nott'ham Forest|44
+==================================================
+Statistic: Pass
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Aaron Ramsdale|Southampton|0
+2nd|Łukasz Fabiański|West Ham|0
+3rd|Arijanet Muric|Ipswich Town|0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Alexis Mac Allister|Liverpool|55
+2nd|Antoine Semenyo|Bournemouth|51
+3rd|Tyrick Mitchell|Crystal Palace|50
+==================================================
+Statistic: Int
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Antonín Kinský|Tottenham|0
+2nd|Arijanet Muric|Ipswich Town|0
+3rd|Neto|Bournemouth|0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Aaron Wan-Bissaka|West Ham|60
+2nd|Antonee Robinson|Fulham|57
+3rd|Ryan Gravenberch|Liverpool|57
+==================================================
+Statistic: Touches
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Albert Grønbaek|Southampton|38
+2nd|William Osula|Newcastle Utd|41
+3rd|Chidozie Obi-Martin|Manchester Utd|44
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Virgil van Dijk|Liverpool|3125
+2nd|Joško Gvardiol|Manchester City|2903
+3rd|Levi Colwill|Chelsea|2728
+==================================================
+Statistic: Def Pen
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Emi Buendía|Aston Villa|0
+2nd|Tyrique George|Chelsea|1
+3rd|Evan Ferguson|West Ham|1
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Mark Flekken|Brentford|1338
+2nd|Bernd Leno|Fulham|1097
+3rd|Bart Verbruggen|Brighton|1034
+==================================================
+Statistic: Def 3rd
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|William Osula|Newcastle Utd|2
+2nd|Odsonne Édouard|Crystal Palace|4
+3rd|Callum Wilson|Newcastle Utd|5
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Mark Flekken|Brentford|1660
+2nd|Jordan Pickford|Everton|1494
+3rd|Bernd Leno|Fulham|1354
+==================================================
+Statistic: Mid 3rd
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Alex McCarthy|Southampton|0
+2nd|Neto|Bournemouth|0
+3rd|Danny Ward|Leicester City|0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Virgil van Dijk|Liverpool|1719
+2nd|William Saliba|Arsenal|1519
+3rd|Joško Gvardiol|Manchester City|1474
+==================================================
+Statistic: Att 3rd
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Aaron Ramsdale|Southampton|0
+2nd|Łukasz Fabiański|West Ham|0
+3rd|Alisson|Liverpool|0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Mohamed Salah|Liverpool|1023
+2nd|Bryan Mbeumo|Brentford|913
+3rd|Bruno Fernandes|Manchester Utd|888
+==================================================
+Statistic: Att Pen
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Aaron Ramsdale|Southampton|0
+2nd|Arijanet Muric|Ipswich Town|0
+3rd|Mark Flekken|Brentford|0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Mohamed Salah|Liverpool|327
+2nd|Alexander Isak|Newcastle Utd|178
+3rd|Antoine Semenyo|Bournemouth|176
+==================================================
+Statistic: Take-Ons Att
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Yerson Mosquera|Wolves|0
+2nd|Antonín Kinský|Tottenham|0
+3rd|Arijanet Muric|Ipswich Town|0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Mohammed Kudus|West Ham|194
+2nd|Jeremy Doku|Manchester City|185
+3rd|Morgan Rogers|Aston Villa|153
+==================================================
+Statistic: Succ%
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Yerson Mosquera|Wolves|0.0
+2nd|Aaron Ramsdale|Southampton|0.0
+3rd|Arijanet Muric|Ipswich Town|0.0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Łukasz Fabiański|West Ham|100.0
+2nd|Ben Davies|Tottenham|100.0
+3rd|Andy Irving|West Ham|100.0
+==================================================
+Statistic: Tkld%
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Łukasz Fabiański|West Ham|0.0
+2nd|Aaron Ramsdale|Southampton|0.0
+3rd|Yerson Mosquera|Wolves|0.0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Woyo Coulibaly|Leicester City|100.0
+2nd|Santiago Bueno|Wolves|100.0
+3rd|Odsonne Édouard|Crystal Palace|100.0
+==================================================
+Statistic: Carries
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Harry Toffolo|Nott'ham Forest|17
+2nd|Albert Grønbaek|Southampton|18
+3rd|Chidozie Obi-Martin|Manchester Utd|22
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Joško Gvardiol|Manchester City|1886
+2nd|Virgil van Dijk|Liverpool|1746
+3rd|William Saliba|Arsenal|1675
+==================================================
+Statistic: ProDist
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Albert Grønbaek|Southampton|15
+2nd|Harry Toffolo|Nott'ham Forest|23
+3rd|Massimo Luongo|Ipswich Town|25
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Jan Paul van Hecke|Brighton|6740
+2nd|Joško Gvardiol|Manchester City|5715
+3rd|Rúben Dias|Manchester City|5295
+==================================================
+Statistic: Carries 1_3
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Aaron Ramsdale|Southampton|0
+2nd|Łukasz Fabiański|West Ham|0
+3rd|Armel Bella Kotchap|Southampton|0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Alex Iwobi|Fulham|102
+2nd|Joško Gvardiol|Manchester City|92
+3rd|Matheus Cunha|Wolves|88
+==================================================
+Statistic: CPA
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Andy Irving|West Ham|0
+2nd|Aaron Cresswell|West Ham|0
+3rd|André Onana|Manchester Utd|0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Mohamed Salah|Liverpool|115
+2nd|Jeremy Doku|Manchester City|90
+3rd|Noni Madueke|Chelsea|87
+==================================================
+Statistic: Mis
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Antonín Kinský|Tottenham|0
+2nd|Alphonse Areola|West Ham|0
+3rd|Alex McCarthy|Southampton|0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Mohamed Salah|Liverpool|109
+2nd|Morgan Rogers|Aston Villa|104
+3rd|Bryan Mbeumo|Brentford|99
+==================================================
+Statistic: Dis
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Aaron Cresswell|West Ham|0
+2nd|Aaron Ramsdale|Southampton|0
+3rd|Łukasz Fabiański|West Ham|0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Mohammed Kudus|West Ham|89
+2nd|Dejan Kulusevski|Tottenham|73
+3rd|Bruno Guimarães|Newcastle Utd|73
+==================================================
+Statistic: Rec
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Albert Grønbaek|Southampton|21
+2nd|Odsonne Édouard|Crystal Palace|26
+3rd|William Osula|Newcastle Utd|27
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Virgil van Dijk|Liverpool|2153
+2nd|Joško Gvardiol|Manchester City|2132
+3rd|William Saliba|Arsenal|2056
+==================================================
+Statistic: Rec PrgR
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Willy Boly|Nott'ham Forest|0
+2nd|Antonín Kinský|Tottenham|0
+3rd|Tyrone Mings|Aston Villa|0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Mohamed Salah|Liverpool|440
+2nd|Bryan Mbeumo|Brentford|319
+3rd|Alejandro Garnacho|Manchester Utd|281
+==================================================
+Statistic: Fls
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Martin Dúbravka|Newcastle Utd|0
+2nd|Mark Flekken|Brentford|0
+3rd|Mark Travers|Bournemouth|0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|João Gomes|Wolves|67
+2nd|Liam Delap|Ipswich Town|67
+3rd|Antoine Semenyo|Bournemouth|66
+==================================================
+Statistic: Fld
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Tyrique George|Chelsea|0
+2nd|Ben Godfrey|Ipswich Town|0
+3rd|Ben Mee|Brentford|0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Bruno Guimarães|Newcastle Utd|100
+2nd|Matheus Cunha|Wolves|69
+3rd|John McGinn|Aston Villa|67
+==================================================
+Statistic: Off
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Will Hughes|Crystal Palace|0
+2nd|Amadou Onana|Aston Villa|0
+3rd|Lewis Miley|Newcastle Utd|0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Dominic Calvert-Lewin|Everton|27
+2nd|Chris Wood|Nott'ham Forest|26
+3rd|Jamie Vardy|Leicester City|25
+==================================================
+Statistic: Crs
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|André|Wolves|0
+2nd|André Onana|Manchester Utd|0
+3rd|Łukasz Fabiański|West Ham|0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Pedro Porro|Tottenham|191
+2nd|Bryan Mbeumo|Brentford|182
+3rd|Bruno Fernandes|Manchester Utd|172
+==================================================
+Statistic: Recov
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Altay Bayındır|Manchester Utd|0
+2nd|Danny Ward|Leicester City|1
+3rd|Fraser Forster|Tottenham|1
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Moisés Caicedo|Chelsea|203
+2nd|Elliot Anderson|Nott'ham Forest|197
+3rd|Bruno Fernandes|Manchester Utd|192
+==================================================
+Statistic: Aerl Won
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Welington|Southampton|0
+2nd|Kosta Nedeljković|Aston Villa|0
+3rd|Kiernan Dewsbury-Hall|Chelsea|0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Dan Burn|Newcastle Utd|134
+2nd|Nathan Collins|Brentford|112
+3rd|Virgil van Dijk|Liverpool|111
+==================================================
+Statistic: Aerl Lost
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Aaron Ramsdale|Southampton|0
+2nd|Ben Godfrey|Ipswich Town|0
+3rd|Bernd Leno|Fulham|0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Chris Wood|Nott'ham Forest|129
+2nd|Jean-Philippe Mateta|Crystal Palace|99
+3rd|Jørgen Strand Larsen|Wolves|96
+==================================================
+Statistic: Aerl Won%
+
+Top 3 Lowest:
+Rank|Player|Team|Value
+1st|Antony|Manchester Utd|0.0
+2nd|Tyrell Malacia|Manchester Utd|0.0
+3rd|Tyrique George|Chelsea|0.0
+
+Top 3 Highest:
+Rank|Player|Team|Value
+1st|Aaron Ramsdale|Southampton|100.0
+2nd|Stefan Ortega|Manchester City|100.0
+3rd|Alisson|Liverpool|100.0
