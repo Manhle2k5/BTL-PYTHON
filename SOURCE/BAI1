@@ -1,0 +1,337 @@
+import time
+import pandas as pd
+from bs4 import BeautifulSoup
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+from io import StringIO
+import os
+import uuid
+
+# Thiết lập thư mục lưu trữ file kết quả
+output_dir = os.path.join(os.getcwd(), "output")
+
+# Hàm chuyển tuổi từ định dạng "năm-ngày" sang số thập phân
+def parse_age(age_input):
+    try:
+        age_str = str(age_input).replace(" ", "")
+        if "-" in age_str:
+            years, days = age_str.split("-")
+            return round(int(years) + (int(days) / 365), 2)
+        return "N/A"
+    except (ValueError, AttributeError):
+        return "N/A"
+
+# Hàm trích xuất mã quốc tịch
+def extract_country_code(nation_str):
+    try:
+        return nation_str.split()[-1]
+    except (AttributeError, IndexError):
+        return "N/A"
+
+# Cấu hình Selenium
+options = Options()
+options.add_argument("--headless")
+options.add_argument("--disable-gpu")
+options.add_argument("--no-sandbox")
+
+# Khởi tạo WebDriver
+try:
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+except Exception as e:
+    print(f"Lỗi khi khởi tạo WebDriver: {e}")
+    exit(1)
+
+# Cấu hình nguồn dữ liệu
+urls = [
+    "https://fbref.com/en/comps/9/2024-2025/stats/2024-2025-Premier-League-Stats",
+    "https://fbref.com/en/comps/9/2024-2025/keepers/2024-2025-Premier-League-Stats",
+    "https://fbref.com/en/comps/9/2024-2025/shooting/2024-2025-Premier-League-Stats",
+    "https://fbref.com/en/comps/9/2024-2025/passing/2024-2025-Premier-League-Stats",
+    "https://fbref.com/en/comps/9/2024-2025/gca/2024-2025-Premier-League-Stats",
+    "https://fbref.com/en/comps/9/2024-2025/defense/2024-2025-Premier-League-Stats",
+    "https://fbref.com/en/comps/9/2024-2025/possession/2024-2025-Premier-League-Stats",
+    "https://fbref.com/en/comps/9/2024-2025/misc/2024-2025-Premier-League-Stats",
+]
+
+table_ids = [
+    "stats_standard",
+    "stats_keeper",
+    "stats_shooting",
+    "stats_passing",
+    "stats_gca",
+    "stats_defense",
+    "stats_possession",
+    "stats_misc",
+]
+
+# Danh sách cột yêu cầu 
+required_columns = [
+    # Thông tin cá nhân
+    "Player", "Nation", "Team", "Position", "Age",
+    # Thống kê thi đấu
+    "Matches Played", "Starts", "Minutes",
+    # Tấn công
+    "Gls", "Ast", "xG", "xAG", "Gls per 90", "Ast per 90", "xG per 90", "xAG per 90",
+    # Sút bóng
+    "SoT%", "SoT per 90", "G per Sh", "Dist",
+    # Thủ môn
+    "GA90", "Save%", "CS%", "PK Save%",
+    # Chuyền bóng
+    "Cmp", "Cmp%", "TotDist", "ShortCmp%", "MedCmp%", "LongCmp%", "KP", "Pass into 1_3", "PPA", "CrsPA",
+    # Tạo cơ hội
+    "SCA", "SCA90", "GCA", "GCA90",
+    # Phòng ngự
+    "Tkl", "TklW", "Deff Att", "Lost", "Blocks", "Sh", "Pass", "Int",
+    # Kiểm soát bóng
+    "Touches", "Def Pen", "Def 3rd", "Mid 3rd", "Att 3rd", "Att Pen", "Take-Ons Att", "Succ%", "Tkld%",
+    # Di chuyển
+    "Carries", "ProDist", "Carries 1_3", "CPA", "Mis", "Dis", "Rec", "Rec PrgR",
+    # Khác
+    "Fls", "Fld", "Off", "Crs", "Recov", "Aerl Won", "Aerl Lost", "Aerl Won%"
+]
+
+# Từ điển đổi tên cột 
+column_rename_dict = {
+    "stats_shooting": {
+        "Standard.8": "Dist",
+        "Standard.6": "G per Sh",
+        "Standard.5": "SoT per 90",
+        "Standard.3": "SoT%",
+        "Unnamed: 4": "Team",
+        "Unnamed: 1": "Player",
+    },
+    "stats_keeper": {
+        "Penalty Kicks.4": "PK Save%",
+        "Performance.9": "CS%",
+        "Performance.4": "Save%",
+        "Performance.1": "GA90",
+        "Unnamed: 4": "Team",
+        "Unnamed: 1": "Player",
+    },
+    "stats_passing": {
+        "Unnamed: 29": "CrsPA",
+        "Unnamed: 28": "PPA",
+        "Unnamed: 27": "Pass into 1_3",
+        "Unnamed: 26": "KP",
+        "Long.2": "LongCmp%",
+        "Medium.2": "MedCmp%",
+        "Short.2": "ShortCmp%",
+        "Total.3": "TotDist",
+        "Total.2": "Cmp%",
+        "Total": "Cmp",
+        "Unnamed: 4": "Team",
+        "Unnamed: 1": "Player",
+    },
+    "stats_gca": {
+        "GCA.1": "GCA90",
+        "SCA.1": "SCA90",
+        "Unnamed: 4": "Team",
+        "Unnamed: 1": "Player",
+    },
+    "stats_defense": {
+        "Unnamed: 20": "Int",
+        "Blocks.2": "Pass",
+        "Blocks.1": "Sh",
+        "Blocks": "Blocks",
+        "Challenges.3": "Lost",
+        "Challenges.1": "Deff Att",
+        "Tackles.1": "TklW",
+        "Tackles": "Tkl",
+        "Unnamed: 4": "Team",
+        "Unnamed: 1": "Player",
+    },
+    "stats_possession": {
+        "Receiving.1": "Rec PrgR",
+        "Receiving": "Rec",
+        "Carries.7": "Dis",
+        "Carries.6": "Mis",
+        "Carries.5": "CPA",
+        "Carries.4": "Carries 1_3",
+        "Carries.2": "ProDist",
+        "Carries": "Carries",
+        "Take-Ons.4": "Tkld%",
+        "Take-Ons.2": "Succ%",
+        "Take-Ons": "Take-Ons Att",
+        "Touches.5": "Att Pen",
+        "Touches.4": "Att 3rd",
+        "Touches.3": "Mid 3rd",
+        "Touches.2": "Def 3rd",
+        "Touches.1": "Def Pen",
+        "Touches": "Touches",
+        "Unnamed: 4": "Team",
+        "Unnamed: 1": "Player",
+    },
+    "stats_misc": {
+        "Aerial Duels.2": "Aerl Won%",
+        "Aerial Duels.1": "Aerl Lost",
+        "Aerial Duels": "Aerl Won",
+        "Performance.12": "Recov",
+        "Performance.6": "Crs",
+        "Performance.5": "Off",
+        "Performance.4": "Fld",
+        "Performance.3": "Fls",
+        "Unnamed: 4": "Team",
+        "Unnamed: 1": "Player",
+    },
+    "stats_standard": {
+        "Per 90 Minutes.6": "xAG per 90",
+        "Per 90 Minutes.5": "xG per 90",
+        "Per 90 Minutes.1": "Ast per 90",
+        "Per 90 Minutes": "Gls per 90",
+        "Progression.2": "PrgR",
+        "Progression.1": "PrgP",
+        "Progression": "PrgC",
+        "Expected.2": "xAG",
+        "Expected": "xG",
+        "Performance.7": "crdR",
+        "Performance.6": "crdY",
+        "Performance.1": "Ast",
+        "Performance": "Gls",
+        "Playing Time.2": "Minutes",
+        "Playing Time.1": "Starts",
+        "Playing Time": "Matches Played",
+        "Unnamed: 5": "Age",
+        "Unnamed: 4": "Team",
+        "Unnamed: 3": "Position",
+        "Unnamed: 2": "Nation",
+        "Unnamed: 1": "Player",
+    }
+}
+
+# Trích xuất dữ liệu 
+all_tables = {}
+for url, table_id in zip(urls, table_ids):
+    print(f"Processing {table_id} from {url}")
+    driver.get(url)
+    time.sleep(2)
+    
+    soup = BeautifulSoup(driver.page_source, "html.parser")
+    table = soup.find("table", {"id": table_id})
+    
+    if not table:
+        print(f"Table {table_id} not found!")
+        continue
+    
+    df = pd.read_html(StringIO(str(table)), header=0)[0]
+    print(f"Original columns in {table_id}:", df.columns.tolist())
+    
+    # Kiểm tra cột Player và Team trước
+    df = df.rename(columns=column_rename_dict.get(table_id))
+    if "Player" not in df.columns or "Team" not in df.columns:
+        print(f"Bỏ qua {table_id}: Thiếu cột 'Player' hoặc 'Team'")
+        continue
+    
+    # Loại bỏ cột trùng lặp
+    df = df.loc[:, ~df.columns.duplicated()]
+    
+    # Lọc cột cần thiết
+    required_for_table = [col for col in required_columns if col in df.columns] + ["Player_Team"]
+    
+    # Tạo cột Player_Team
+    df["Player_Team"] = df["Player"].astype(str) + "_" + df["Team"].astype(str)
+    
+    # Chuyển đổi tuổi
+    if "Age" in df.columns:
+        df["Age"] = df["Age"].apply(parse_age)
+    
+    # Lưu DataFrame
+    df = df[required_for_table]
+    all_tables[table_id] = df
+
+# Xử lý dữ liệu
+if all_tables:
+    try:
+        # Gộp các DataFrame
+        merged_df = None
+        for table_id, df in all_tables.items():
+            if merged_df is None:
+                merged_df = df.copy()
+            else:
+                df = df.drop_duplicates(subset=["Player_Team"], keep="first")
+                merged_df = pd.merge(
+                    merged_df,
+                    df,
+                    on=["Player_Team"],
+                    how="outer",
+                    suffixes=("", f"_{table_id}")
+                )
+                
+                # Xử lý cột trùng lặp
+                for col in required_columns:
+                    if col == "Player_Team":
+                        continue
+                    col_duplicate = f"{col}_{table_id}"
+                    if col in merged_df.columns and col_duplicate in merged_df.columns:
+                        merged_df[col] = merged_df[col].combine_first(merged_df[col_duplicate])
+                        merged_df = merged_df.drop(columns=[col_duplicate])
+        
+        if merged_df is None or merged_df.empty:
+            raise ValueError("Không có dữ liệu hợp lệ để gộp.")
+        
+        # Xóa cột tạm thời
+        if "Player_Team" in merged_df.columns:
+            merged_df = merged_df.drop(columns=["Player_Team"])
+        
+        # Đảm bảo tất cả cột yêu cầu có mặt
+        for col in required_columns:
+            if col not in merged_df.columns:
+                merged_df[col] = "N/A"
+        
+        # Sắp xếp lại cột
+        merged_df = merged_df[required_columns]
+        
+        # Định nghĩa kiểu dữ liệu
+        int_columns = [
+            "Matches Played", "Starts", "Minutes", "Gls", "Ast", "crdY", "crdR",
+            "PrgC", "PrgP", "PrgR", "Cmp", "KP", "Pass into 1_3", "PPA", "CrsPA",
+            "ProDist", "TotDist", "Tkl", "TklW", "Deff Att", "Lost", "Blocks", "Sh",
+            "Pass", "Int", "Touches", "Def Pen", "Def 3rd", "Mid 3rd", "Att 3rd",
+            "Att Pen", "Take-Ons Att", "Carries", "Carries 1_3", "CPA", "Mis", "Dis",
+            "Rec", "Rec PrgR", "Fls", "Fld", "Off", "Crs", "Recov", "Aerl Won", "Aerl Lost"
+        ]
+        
+        float_columns = [
+            "Age", "xG", "xAG", "Gls per 90", "Ast per 90", "xG per 90", "xAG per 90",
+            "GA90", "Save%", "CS%", "PK Save%", "SoT%", "SoT per 90", "G per Sh", "Dist",
+            "Cmp%", "ShortCmp%", "MedCmp%", "LongCmp%", "SCA", "SCA90", "GCA", "GCA90",
+            "Succ%", "Tkld%", "Aerl Won%"
+        ]
+        
+        # Áp dụng kiểu dữ liệu
+        for col in int_columns:
+            if col in merged_df.columns and merged_df[col].dtype != "Int64":
+                merged_df[col] = pd.to_numeric(merged_df[col], errors="coerce").astype("Int64")
+        
+        for col in float_columns:
+            if col in merged_df.columns and merged_df[col].dtype != float:
+                merged_df[col] = pd.to_numeric(merged_df[col], errors="coerce").round(2)
+        
+        # Lọc cầu thủ chơi trên 90 phút
+        if "Minutes" in merged_df.columns:
+            merged_df = merged_df[merged_df["Minutes"] > 90]
+        
+        # Làm sạch cột Nation
+        if "Nation" in merged_df.columns:
+            merged_df["Nation"] = merged_df["Nation"].apply(extract_country_code)
+        
+        # Sắp xếp theo tên cầu thủ
+        if "Player" in merged_df.columns:
+            merged_df = merged_df.sort_values(by="Player")
+        
+        # Lưu vào file CSV
+        os.makedirs(output_dir, exist_ok=True)
+        result_path = os.path.join(output_dir, "results.csv")
+        
+        merged_df.to_csv(result_path, index=False, encoding="utf-8-sig", na_rep="N/A")
+        print(f"✅ Lưu dữ liệu thành công vào {result_path} với {merged_df.shape[0]} hàng và {merged_df.shape[1]} cột.")
+        
+    except Exception as e:
+        print(f"Lỗi khi xử lý dữ liệu: {e}")
+        print("❌ Không thể xử lý dữ liệu.")
+else:
+    print("❌ Không thu thập được dữ liệu.")
+
+# Dọn dẹp
+driver.quit()
